@@ -1,0 +1,16 @@
+{
+  "name": "paranormal-talk",
+  "description": "chat and post about paranormal occurrence and resarch",
+  "scripts": {
+  },
+  "env": {
+  },
+  "formation": {
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+
+  ]
+}
