@@ -1,0 +1,25 @@
+.modal{
+  top: 20%px;
+  left:50%;
+  min-width:250px;
+  max-width:540px;
+  width:50%;
+}
+
+  
+  .btnExtra{
+  padding-left:50px;
+      padding-right:50px
+}
+
+.LoginModal{
+	    padding-bottom: 5px;
+}
+
+.input__field--haruki {
+	padding: 0.4em 0.25em;
+	width: 100%;
+	background: transparent;
+	color: #AFB5BB;
+	font-size: 1.55em;
+}

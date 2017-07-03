@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import * as screenfull from 'screenfull';
+import SignupLogin from './SignupLogin'
 
 
 
@@ -49,6 +50,7 @@ class ComingSoon extends Component {
 				<li><a href="#home" className="active">Home</a></li>
 				<li><a href="#about">About</a></li>
 				<li><a href="#contact">Contact</a></li>
+				<li><a href="#signuplogin">Signup and Login</a></li>
 			</ul>
 		</nav>
 
@@ -68,19 +70,24 @@ class ComingSoon extends Component {
 		<section className="content hide" id="about">
 			<h1>About</h1>
 			<h5>Here's a little about what we're up to.</h5>
-			<p>Nullam quis arcu a elit feugiat congue nec non orci. Pellentesque feugiat bibendum placerat. Nullam eu massa in ipsum varius laoreet. Ut tristique pretium egestas. Sed sed velit dolor. Nam rhoncus euismod lorem, id placerat ipsum placerat nec. Mauris ut eros a ligula tristique lacinia non blandit metus. Sed vitae velit lorem, et scelerisque diam.</p>
-			<p><a href="#">Follow our updates on Twitter</a></p>
+			<p>Besides This paranormal Social website we peovide free counselling for paranormal victims and also provide free resarch for the haunting.So if you feel like you have anything to share or you feel like you are in danger because of paranormal.please contact us.</p>
+			<p><a href="https://twitter.com/paranormaltalki" target="blank">Follow our updates on Twitter</a></p>
 		</section>
 
 		{/* Contact Page */}   
 		<section className="content hide" id="contact">
 			<h1>Contact</h1>
 			<h5>Get in touch.</h5>
-			<p>Email: <a href="#">info@avenir.com</a><br />
-				Phone: 123.456.7890<br /></p>
-			<p>123 East Main<br />
-				New York, NY 12345</p>
+			<p>Email: <a href="#">paranormaltalkinfinity@gmail.com</a><br />
+				Phone: +91 8961381702<br /></p>
+			<p>Kolkata, Westbengal<br />
+				India</p>
 		</section>
+		
+		<section className="content hide"id="signuplogin">
+		    <SignupLogin/>
+		</section>
+		
 		
 		{/*  Background Slides*/} 
 		<div id="maximage">
