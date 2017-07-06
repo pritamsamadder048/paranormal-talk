@@ -23,3 +23,24 @@
 	color: #AFB5BB;
 	font-size: 1.55em;
 }
+
+.custom-margin10{
+  margin-left: -15px!important;
+}
+
+.label-blue{
+  color: #4286f4;
+}
+
+.placeholder-color::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #14a8af;
+}
+.placeholder-color::-moz-placeholder { /* Firefox 19+ */
+  color: #14a8af;
+}
+.placeholder-color:-ms-input-placeholder { /* IE 10+ */
+  color: #14a8af;
+}
+.placeholder-color:-moz-placeholder { /* Firefox 18- */
+  color: #14a8af;
+}

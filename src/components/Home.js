@@ -5,7 +5,7 @@ import SignupLogin from './SignupLogin';
 
 
 
-class ComingSoon extends Component {
+class Home extends Component {
 	
 	constructor(props){
     super(props);
@@ -61,7 +61,7 @@ class ComingSoon extends Component {
 		{/*Home Page*/}
 		<section className="content show Template-left " id="home">
 			<h1>Welcome</h1>
-			<h5>Our new site is coming soon!</h5>
+			<h5>Halloween is Near!</h5>
 			<p>Greetings, We Welcome you to world of Paranormal. This Site will be a gathering place for paranormal lovers. If You Love paranormal things or if you are a professional paranormal investigator, please join us and share what you love and see what others are doing.</p>
 			<p><a href="#about">More info &#187;</a></p>
 		</section>
@@ -84,7 +84,7 @@ class ComingSoon extends Component {
 				India</p>
 		</section>
 		
-		<section className="content hide Template-left"id="signuplogin">
+		<section className="content hide"id="signuplogin">
 		    <SignupLogin/>
 		</section>
 		
@@ -122,4 +122,4 @@ class ComingSoon extends Component {
 
 
 
-export default ComingSoon;
+export default Home;

@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import Qs from "qs";
 import './SignupLogin.css';
+import SignupModal from './SignupModal';
+import './SignupModal.css';
+
 
 
 
@@ -11,11 +14,22 @@ class SignupLogin extends Component {
     super(props);
 	this.state={
 		email:'',
-		password:''
+		password:'',
+		isOpen: false
 	};
 	this.handleInputChange=this.handleInputChange.bind(this);
 	this.handleLogin=this.handleLogin.bind(this);
-    };
+	this.handleSignupModal=this.handleSignupModal.bind(this);
+	this.toggleModal=this.toggleModal.bind(this);
+    }
+	
+toggleModal(event){
+	event.preventDefault();
+	
+    this.setState({
+      isOpen: !this.state.isOpen
+    });
+  }
 
 
 	
@@ -28,6 +42,12 @@ const target=event.target;
     this.setState({
       [name]:value
     });
+}
+
+handleSignupModal(event)
+{
+	event.preventDefault();
+	alert("openning signup dialogue..");
 }
 handleLogin(event)
   {
@@ -81,9 +101,9 @@ handleLogin(event)
 render(){
 
 return(
-<div tabindex="-1" className="modal show" id="myModal" aria-hidden="true">
+<div id="signuploginmodal" className="modal show" tabindex="-1" area-hidden="true">
     <div className="modal-header">
-        	<h1 className="text-center" id="myModalLabel">Login / Signup</h1>
+        	<h1 className="text-center" id="signuploginmodallabel">Login / Signup</h1>
 
     </div>
     <div className="modal-body">
@@ -91,27 +111,33 @@ return(
             <div className="control-group">
                 
                 <div className="controls">
-                    <input className="input-block-level input__field--haruki" name="email" id="email" onChange={this.handleInputChange} type="text" value={this.state.email} placeholder="Email"/>
+                    <input className="input-block-level input__field--haruki placeholder-color" name="email" id="email" onChange={this.handleInputChange} type="text" value={this.state.email} placeholder="Email"/>
                 </div>
             </div>
             <div className="control-group">
                 
                 <div className="controls">
-                    <input className="input-block-level input__field--haruki" name="password" id="password"  onChange={this.handleInputChange} type="password" value={this.state.password} placeholder="Password"/>
+                    <input className="input-block-level input__field--haruki placeholder-color" name="password" id="password"  onChange={this.handleInputChange} type="password" value={this.state.password} placeholder="Password"/>
                 </div>
             </div>
           	
             <div className="control-group">
-			{/*<label className="checkbox">
-                    <input type="checkbox" id="rememberme"/>Remember me</label>
-			*/}
+			              <label className="checkbox label-blue">
+                    <input type="checkbox" id="rememberme" className="custom-margin10"/>Remember me</label>
+			
             </div>
+			
         </form>
+
     </div>
     <div className="modal-footer">
       	<button className="btn btn-link">Forgot password?</button>
         <button className="btn btnExtra btn-large btn-primary" onClick={this.handleLogin}>Login</button>
-        <button className="btn btnExtra btn-large btn-primary">Signup</button>
+        <button className="btn btnExtra btn-large btn-primary" onClick={this.toggleModal}>Signup</button>
+    </div>
+
+    <div id="customsignup" >
+      <SignupModal show={this.state.isOpen} onClose={this.toggleModal}/>
     </div>
 </div>
 )
