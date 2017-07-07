@@ -7,6 +7,7 @@ import {BrowserRouter as Router,Route,Link} from 'react-router-dom';
 import './index.css';
 import App from './App';
 import Home from './components/Home';
+import AddPost from './components/AddPost';
 import ComingSoon from './components/ComingSoon';
 import registerServiceWorker from './registerServiceWorker';
 //import { Router, Route, Link, IndexRoute  } from 'react-router'

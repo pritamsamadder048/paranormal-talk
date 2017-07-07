@@ -21,12 +21,14 @@ class Home extends Component {
             screenfull.toggle();
 	}
   }
+
 	
   render()
   {
     return(
+  
       <div>
-	  {/*Social Links */}
+      
 		<nav className="social-nav">
 			<ul>
 				<li><a href="#"><img src="images/icon-facebook.png" /></a></li>
@@ -37,14 +39,10 @@ class Home extends Component {
 				<li><a href="#"><img src="images/icon-pinterest.png" /></a></li>
 			</ul>
 		</nav>
- 
-		{/*Switch to full screen */}
 		<button className="full-screen" onClick={this.handleFullScreen}></button>
 
-		{/*Site Logo*/}
 		<div id="logo">Paranormal Talk</div>
 
-		{/*Main Navigation */}
 		<nav className="main-nav">
 			<ul>
 				<li><a href="#home" className="active">Home</a></li>
@@ -54,11 +52,9 @@ class Home extends Component {
 			</ul>
 		</nav>
 
-		{/*Slider Controls */}
 		<a href="" id="arrow_left"><img src="images/arrow-left.png" alt="Slide Left" /></a>
 		<a href="" id="arrow_right"><img src="images/arrow-right.png" alt="Slide Right" /></a>
 
-		{/*Home Page*/}
 		<section className="content show Template-left " id="home">
 			<h1>Welcome</h1>
 			<h5>Halloween is Near!</h5>
@@ -66,7 +62,6 @@ class Home extends Component {
 			<p><a href="#about">More info &#187;</a></p>
 		</section>
 
-		{/*About Page */}
 		<section className="content hide" id="about">
 			<h1>About</h1>
 			<h5>Here's a little about what we're up to.</h5>
@@ -74,7 +69,6 @@ class Home extends Component {
 			<p><a href="https://twitter.com/paranormaltalki" target="blank">Follow our updates on Twitter</a></p>
 		</section>
 
-		{/* Contact Page */}   
 		<section className="content hide" id="contact">
 			<h1>Contact</h1>
 			<h5>Get in touch.</h5>
@@ -89,7 +83,6 @@ class Home extends Component {
 		</section>
 		
 		
-		{/*  Background Slides*/} 
 		<div id="maximage">
 			<div>
 				<img src="images/backgrounds/bg-img-1.jpg" alt="" />

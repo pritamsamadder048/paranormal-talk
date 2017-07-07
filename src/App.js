@@ -6,8 +6,7 @@ import Post from './components/Post'
 import ComingSoon from './components/ComingSoon'
 import SignupLogin from './components/SignupLogin'
 import Home from './components/Home';
-
-
+import AddPost from './components/AddPost';
 
 {/*
 // class App extends Component {
@@ -39,6 +38,7 @@ class App extends Component {
          <Switch>
             <Route exact path='/' component={ComingSoon}/>
             <Route exact path='/home' component={Home}/> 
+            <Route exact path='/post' component={Post}/> 
           </Switch>
       </div>
     );
